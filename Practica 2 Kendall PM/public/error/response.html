@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #333;
+            color: #f8f8f8;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .error-container {
+            background: linear-gradient(145deg, #ff4e50, #f9d423);
+            border-radius: 10px;
+            padding: 30px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+            color: #fff;
+        }
+        .error-title {
+            font-size: 2em;
+            margin: 0 0 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .error-message {
+            font-size: 1.1em;
+            margin: 0 0 20px;
+        }
+        .retry-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #333;
+            color: #f9d423;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+        .retry-button:hover {
+            background-color: #ff4e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1 class="error-title">Oops! Error 404</h1>
+        <p class="error-message">Parece que el recurso que estás buscando no existe.</p>
+        <button class="retry-button" onclick="window.location.href='/'">Volver al Inicio</button>
+    </div>
+</body>
+</html>
